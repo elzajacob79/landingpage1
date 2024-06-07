@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="home">
+        <h1> <i class="fa-solid fa-bars"></i> Dashboard</h1>
+        <button class="btn btn-outline-light" style="text-align: right; margin-left:1300px"><i class="fa-solid fa-power-off me-2" type="button" onclick="logout()"></i>Logout</button>
+    </div>
+
+    <div class="wecome1">
+        <h1 class="text-center pt-3">Welcome <span class="text-danger" id="result">User</span></h1>
+        <p style="margin:30px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a expedita eum, doloremque architecto quae voluptate nesciunt atque. Odio quod, fugiat repellendus ipsam eius atque recusandae quibusdam libero suscipit tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium id provident, reprehenderit architecto quos ipsum ab alias nihil, deserunt voluptate nulla molestiae esse tempore! In quo similique sunt optio distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, animi error necessitatibus assumenda aut dolorum ipsa cupiditate nostrum nisi quisquam molestias magni atque, asperiores alias possimus, eaque odio facilis in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam modi officiis incidunt dignissimos vero quis quaerat pariatur, veritatis atque repudiandae ipsam exercitationem et, a aspernatur eveniet voluptatum itaque fugit reprehenderit.</p>
+    </div>
+    
+</body>
+<script>
+    let user=localStorage.getItem("username")
+    if(user){
+        result.innerHTML=user
+    }
+    else{
+        alert('please login')
+        window.location='home.html'
+    }
+    
+
+    function logout(){
+        localStorage.removeItem("username")
+        window.location="home.html"
+    }
+</script>
+</html>

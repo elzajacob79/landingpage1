@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="home">
+        <h1> <i class="fa-solid fa-house"></i> Landing Page</h1>
+    </div>
+    <div class="welcome">
+        <h1>Welcome to our <span class="text-primary">Website</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deserunt, esse architecto fugiat iste quod explicabo sint vitae! Voluptates fugit reiciendis magni placeat repudiandae. Aliquid deleniti modi voluptates molestiae culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio! Cupiditate tenetur quidem facilis sed blanditiis. Neque, cumque ipsum! Incidunt accusantium cum esse sint doloremque vero tempore praesentium facere architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate possimus velit doloremque deleniti magnam. Omnis mollitia laudantium ducimus id odit obcaecati sunt architecto quae distinctio. Aliquid ea nihil quaerat labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo consequuntur dicta eveniet, fugiat vel ratione velit quae ad! Id nihil voluptas amet dolorum recusandae, magnam quod iste quo cum!</p>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 py-3 px-5">
+            <img src="./images/gif.gif" alt="" width="100%">
+        </div>
+        <div class="col-md-5 py-3 px-5">
+            <form class="shadow rounded p-3" style="background-image: linear-gradient(to right,rgb(96, 96, 194),rgb(240, 232, 232));">
+                <h3 class="text-center text-primary">Register</h3>
+                <div class="mb-3">
+                    <input id="regusername" type="text" placeholder="username" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <input id="regpswd" type="text" placeholder="password" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button onclick="obj.register()"  type="button" class="btn btn-primary">SignUp</button>
+                    <span class="ms-3">Are you a already User?Click here to<a href="index.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+</body>
+<script src="./logic.js"></script>
+</html>
